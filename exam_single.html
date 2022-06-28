@@ -29,9 +29,13 @@
 <nav></nav>
 <label class="exam"> <  Exam Name </label>
 
+<div class="addq">
+  <button type="submit">Add Question</button>
+   </div>
 <div class="aquiz">
     <table class="table1">
       <table1>
+        <caption>Question List</caption>
         <thead>
           <tr>
           <th>Question</th>
@@ -60,31 +64,46 @@
             <td></td>
           </tr>
         </tbody>
-       </table>
+       </table><br>
+       <div class="fbtn">
+     
+        <button type="submit">Publish Paper</button>
+        </div>
+        <div class="examdate">
+          <input type="date" name="date" placeholder="Exam Date Time" >
+          </div>
+          <div class="examdu">
+            <input type="number" name="time" placeholder="Exam Duration" >
+            </div>
   
   <div class="box">
        
         <input type="text" placeholder="Question Name">
          <ul>
+          <p>Answer</p>
           <li>
-            <input type="radio" name="answer" id="a" class="answer">
             <label for="a" id="a_text">Answer</label>
+            <input type="radio" name="answer" id="a" class="answer">
           </li>
           <li>
-            <input type="radio" name="answer" id="b" class="answer">
+            
             <label for="b" id="b_text">Answer</label>
+            <input type="radio" name="answer" id="b" class="answer">
           </li>
           <li>
-            <input type="radio" name="answer" id="c" class="answer">
+           
             <label for="c" id="c_text">Answer</label>
+            <input type="radio" name="answer" id="c" class="answer">
           </li>
           <li>
-            <input type="radio" name="answer" id="d" class="answer">
+            
             <label for="d" id="d_text">Answer</label>
+            <input type="radio" name="answer" id="d" class="answer">
           </li>
          </ul>
-         <button id="submit">Save</button>
-  
+         <div class="save">
+         <button type="submit">Save</button>
+          </div>
       
 
   </div>
