@@ -1,4 +1,8 @@
+<?php
+session_start();
+$resuls=$_SESSION['score'];
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,8 +35,49 @@
 
 <div class="rb1">
   <label class="topic">Exam Completed</label>
-  <label class="presult">Passed</label>
-  <label class="result">A - 89 Points</label>
+
+  <?php
+  $class="presult";
+if($resuls>40){
+
+  echo "<label class=$class>Passed</label>";
+}else
+{
+echo "<label class=$class>Fail</label>";
+}
+  ?>
+
+<?php
+  $class="presult";
+if($resuls>40){
+
+  echo "<label class=$class>Passed</label>";
+}else
+{
+echo "<label class=$class>Fail</label>";
+}
+  ?>
+
+<?php
+ $class2="result";
+    $calculate="$resuls";
+    switch ($calculate)
+    {
+    case "75":
+       echo "";
+       break;
+    case "65":
+       echo "B";
+       break;
+    case "50":
+       echo "C";
+       break;
+    default:
+       echo "";
+    }
+    ?>
+  
+  <label class="result">A - <?php echo $_SESSION['score']*33; ?> Points</label>
 </div>
 
 <div class="rb2">

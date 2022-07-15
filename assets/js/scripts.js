@@ -73,3 +73,14 @@ ClassicEditor.create(document.querySelector("#body"), {
 }).catch(error => {
     console.log(error);
 });
+
+
+
+
+document.getElementById('sbutton').addEventListener('click',function() {
+    document.querySelector('.addq').style.display = 'flex';
+    
+});
+
+
+
